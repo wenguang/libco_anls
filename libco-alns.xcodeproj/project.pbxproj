@@ -114,10 +114,9 @@
 				A81961581EC025EA00115AE7 /* co_routine_specific.h */,
 				A81961591EC025EA00115AE7 /* co_routine.cpp */,
 				A819615A1EC025EA00115AE7 /* co_routine.h */,
-				A819615B1EC025EA00115AE7 /* co.mk */,
-				A819615C1EC025EA00115AE7 /* coctx_swap.S */,
 				A819615D1EC025EA00115AE7 /* coctx.cpp */,
 				A819615E1EC025EA00115AE7 /* coctx.h */,
+				A819615C1EC025EA00115AE7 /* coctx_swap.S */,
 				A819615F1EC025EA00115AE7 /* example_closure.cpp */,
 				A81961601EC025EA00115AE7 /* example_cond.cpp */,
 				A81961611EC025EA00115AE7 /* example_copystack.cpp */,
@@ -127,9 +126,10 @@
 				A81961651EC025EA00115AE7 /* example_setenv.cpp */,
 				A81961661EC025EA00115AE7 /* example_specific.cpp */,
 				A81961671EC025EA00115AE7 /* example_thread.cpp */,
-				A81961681EC025EA00115AE7 /* LICENSE.txt */,
+				A819615B1EC025EA00115AE7 /* co.mk */,
 				A81961691EC025EA00115AE7 /* Makefile */,
 				A819616A1EC025EA00115AE7 /* README.md */,
+				A81961681EC025EA00115AE7 /* LICENSE.txt */,
 			);
 			path = libco;
 			sourceTree = "<group>";
@@ -334,6 +334,7 @@
 				A81961511EC025B200115AE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

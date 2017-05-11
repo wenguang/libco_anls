@@ -21,9 +21,10 @@ COMM_MAKE = 1
 COMM_ECHO = 1
 version=0.5
 v=debug
+## 引入co.mk文件
 include co.mk
 
-########## options ##########
+########## 编译选项 ##########
 CFLAGS += -g -fno-strict-aliasing -O2 -Wall -export-dynamic \
 	-Wall -pipe  -D_GNU_SOURCE -D_REENTRANT -fPIC -Wno-deprecated -m64
 
@@ -41,8 +42,10 @@ colib:libcolib.a libcolib.so
 libcolib.a: $(COLIB_OBJS)
 	$(ARSTATICLIB) 
 libcolib.so: $(COLIB_OBJS)
-	$(BUILDSHARELIB) 
+	$(BUILDSHARELIB)
 
+
+### BUILDEXE 变量定义在co.mk文件中 BUILDEXE = $(CPP) $(BFLAGS) -o $@ $^ $(LINKS)
 example_echosvr:example_echosvr.o
 	$(BUILDEXE) 
 example_echocli:example_echocli.o
