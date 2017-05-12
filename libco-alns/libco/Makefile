@@ -25,11 +25,15 @@ v=debug
 include co.mk
 
 ########## 编译选项 ##########
+#### 编译参数参考：http://www.cnblogs.com/zhangsir6/articles/2956798.html
+#### GCC中文手册：https://github.com/wenguang/startup/blob/master/GCC%20%E4%B8%AD%E6%96%87%E6%89%8B%E5%86%8C.pdf 
 CFLAGS += -g -fno-strict-aliasing -O2 -Wall -export-dynamic \
 	-Wall -pipe  -D_GNU_SOURCE -D_REENTRANT -fPIC -Wno-deprecated -m64
 
+#### 链接阶段的参数，在./lib目录下搜索colib pthread dl 且链接库
 LINKS += -g -L./lib -lcolib -lpthread -ldl 
 
+####
 COLIB_OBJS=co_epoll.o co_routine.o co_hook_sys_call.o coctx_swap.o coctx.o
 #co_swapcontext.o
 
